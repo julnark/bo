@@ -28,6 +28,9 @@ body {
     padding: 2rem 4rem;
     background: #F5EDED;
     box-shadow: 0 0.5rem 0.4rem rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
 
 }
 
@@ -55,6 +58,50 @@ body {
 .ListItem a:hover {
     color: #6482AD;
 }
+
+/*Aandacht trekker*/
+.Aandachttrekker {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/Studenten.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    padding-top: 15rem; 
+    flex-direction: column;
+}
+
+.Aandachttrekker__H1 {
+    color: #eee;
+    font-size: 200%;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin-bottom: 2rem;
+}
+
+.Aandachttrekker__p {
+    color: #eee;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+button {
+    background-color: #F5EDED; 
+    color: black; 
+    padding: 1rem 2rem; 
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    border-color: #6482AD ;
+}
+
+button:hover {
+    background-color: #B39393; /* Donkerdere tint bij hover */
+}
+
 
 /* General Footer Styling */
 .PageFooter {
