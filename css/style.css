@@ -66,10 +66,10 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding-top: 15rem; 
+    padding-top: 15rem;
     flex-direction: column;
 }
 
@@ -88,20 +88,71 @@ body {
 }
 
 button {
-    background-color: #F5EDED; 
-    color: black; 
-    padding: 1rem 2rem; 
-    font-size: 1.5rem; 
-    font-weight: bold; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease; 
-    border-color: #6482AD ;
+    background-color: #F5EDED;
+    color: black;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-color: #6482AD;
 }
 
 button:hover {
-    background-color: #B39393; /* Donkerdere tint bij hover */
+    background-color: #B39393;
+    /* Donkerdere tint bij hover */
 }
 
+/*Login Pagina Styling*/
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 10rem;
+    background-color: #6482AD;
+}
+
+form {
+    background-color: #fff;
+    padding: 4rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 40rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+}
+
+form input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+}
+
+form button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #6482AD;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #3e506b;
+}
 
 /* General Footer Styling */
 .PageFooter {

@@ -19,10 +19,22 @@
         <ul class="List">
             <li class="ListItem"><a href="#Overons">Over Ons</a></li>
             <li class="ListItem"><a href="agenda.html">Agenda</a></li>
-            <li class="ListItem"> <a href="#Contact">Contact</a></li>
+            <li class="ListItem"><a href="#Contact">Contact</a></li>
             <li class="ListItem"><a href="login.html">Login</a></li>
         </ul>
     </header>
+
+    <main>
+        <form action="dashboard.html" method="POST">
+            <label for="username">Gebruikersnaam:</label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+            <label for="password">Wachtwoord:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+            <button type="submit">Login</button>
+        </form>
+    </main>
 
     <footer class="PageFooter" id="Contact">
         <div class="footer-section about">
@@ -56,7 +68,6 @@
             <a href="#"><i class="fa-brands fa-tiktok"></i></a>
         </div>
     </footer>
-
 </body>
 
 </html>
