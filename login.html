@@ -4,13 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SV Unity</title>
-    <script src="https://kit.fontawesome.com/61877b9a09.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
+    <title>Login of Aanmelden</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -19,22 +15,46 @@
         <ul class="List">
             <li class="ListItem"><a href="#Overons">Over Ons</a></li>
             <li class="ListItem"><a href="agenda.html">Agenda</a></li>
-            <li class="ListItem"><a href="#Contact">Contact</a></li>
+            <li class="ListItem"> <a href="#Contact">Contact</a></li>
             <li class="ListItem"><a href="login.html">Login</a></li>
         </ul>
     </header>
 
-    <main>
-        <form action="dashboard.html" method="POST">
-            <label for="username">Gebruikersnaam:</label>
-            <input type="text" id="username" name="username" required>
-            <br><br>
-            <label for="password">Wachtwoord:</label>
-            <input type="password" id="password" name="password" required>
-            <br><br>
-            <button type="submit">Login</button>
-        </form>
-    </main>
+    <section class="MELD">
+        <div class="form-container">
+            <h2>Inloggen of Aanmelden</h2>
+            <div class="tab-buttons">
+                <button class="tab-button active" onclick="showForm('login')">Inloggen</button>
+                <button class="tab-button" onclick="showForm('register')">Aanmelden</button>
+            </div>
+
+            <!-- Inloggen Formulier -->
+            <form id="login" class="form-content active">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Email Address" required>
+
+                <label for="password">Wachtwoord</label>
+                <input type="password" id="password" placeholder="Wachtwoord" required>
+
+                <a href="#">Wachtwoord vergeten?</a>
+                <button type="submit">Login</button>
+            </form>
+
+            <!-- Aanmelden Formulier -->
+            <form id="register" class="form-content">
+                <label for="new-email">Email Address</label>
+                <input type="email" id="new-email" placeholder="Email Address" required>
+
+                <label for="new-password">Wachtwoord</label>
+                <input type="password" id="new-password" placeholder="Wachtwoord" required>
+
+                <label for="confirm-password">Bevestig Wachtwoord</label>
+                <input type="password" id="confirm-password" placeholder="Bevestig Wachtwoord" required>
+
+                <button type="submit">Aanmelden</button>
+            </form>
+        </div>
+    </section>
 
     <footer class="PageFooter" id="Contact">
         <div class="footer-section about">

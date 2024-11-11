@@ -12,7 +12,7 @@ html {
 
 body {
     font-size: 2rem;
-    background-color: #333;
+    background-color: #F5EDED;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -104,54 +104,171 @@ button:hover {
 }
 
 /*Login Pagina Styling*/
-main {
+.MELD {
+    margin-top: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    padding-top: 10rem;
-    background-color: #6482AD;
+    width: 100%;
 }
 
-form {
-    background-color: #fff;
-    padding: 4rem;
+.form-container {
+    background-color: white;
+    padding: 2rem;
     border-radius: 0.5rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 40rem;
+    max-width: 50rem;
+    max-height: 50rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 0.5rem;
+    background-color: #90a4d4;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab-button.active,
+.tab-button:hover {
+    background-color: #3e506b;
+}
+
+.form-content {
+    display: none;
+    flex-direction: column;
+}
+
+.form-content.active {
+    display: flex;
 }
 
 form label {
-    display: block;
+    text-align: left;
     margin-bottom: 0.5rem;
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 form input {
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 2rem;
-    border: 0.1rem solid #ccc;
-    border-radius: 0.5rem;
-    font-size: 1.6rem;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 2rem;
+}
+
+form a {
+    color: #3e506b;
+    font-size: 0.9rem;
+    text-decoration: none;
+    margin-bottom: 1rem;
 }
 
 form button {
-    width: 100%;
-    padding: 1rem;
-    background-color: #6482AD;
+    padding: 0.75rem;
+    background-color: #3e506b;
     color: white;
-    font-size: 1.6rem;
-    font-weight: bold;
+    font-size: 1rem;
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
 form button:hover {
-    background-color: #3e506b;
+    background-color: #2d3d54;
+}
+
+/* Activiteiten Tabel */
+.H2Tabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ActivitiesTable {
+    width: 80%;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    background-color: #F5EDED;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.ActivitiesTable th,
+.ActivitiesTable td {
+    padding: 1.5rem;
+    text-align: left;
+    border: 0.1rem solid #ccc;
+}
+
+.ActivitiesTable th {
+    background-color: #6482AD;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.ActivitiesTable td {
+    font-size: 1.4rem;
+}
+
+.ActivitiesTable tbody tr:nth-child(even) {
+    background-color: #eee;
+}
+
+/*SV Unity*/
+.about-section {
+    padding: 4rem;
+    background-color: #F5EDED;
+    border-radius: 1rem;
+    max-width: 100%;
+    margin: 2rem auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.about-title {
+    font-size: 2.4rem;
+    color: #3e506b;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.about-description {
+    font-size: 1.6rem;
+    color: #333;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 60rem;
+}
+
+.about-image{
+    width: 50rem;
+    height: 50rem;
+    object-fit: cover;
 }
 
 /* General Footer Styling */
@@ -164,6 +281,7 @@ form button:hover {
     color: black;
     font-size: 1.4rem;
     text-align: left;
+    box-shadow: 0 -0.5rem 0.4rem rgba(0, 0, 0, 0.1);
 }
 
 .PageFooter a {
